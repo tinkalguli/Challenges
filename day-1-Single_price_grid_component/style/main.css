@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=========================
+    Global
+==========================*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2{
+	font-size: 18px;
+}
+p{
+	font-size: 16px;
+}
+/*=========================
+    body
+==========================*/
+body{
+  margin:15% 25%;
+	max-width: 1440px;
+	background: hsl(204, 43%, 93%);
+	font-family: "Karla",sans-serif;
+}
+
+/*=========================
+    header
+==========================*/
+header{
+	background: #fff;
+	padding: 5%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align: left;
+	height: auto;
+	width:100%;
+}
+h1{
+	font-size: 21px;
+	color: hsl(179, 62%, 43%);
+	margin: 4% auto;
+}
+header h2{
+	color: hsl(71, 73%, 54%);
+	margin: 4% auto;
+}
+header p{
+	color: rgba(0,0,0,0.7);
+	margin: 4% auto;
+}
+
+/*=========================
+    main
+==========================*/
+
+main{
+	color:#fff;
+	background: hsl(179, 62%, 40%);
+	text-align: left;
+	padding: 8%;
+	height: auto;
+	width:100%;
+}
+
+main h2{
+	margin: 8% auto;
+}
+main p{
+	margin: 8% auto;
+}
+
+/*=========================
+    button
+==========================*/
+
+button{
+	color: #fff;
+	background: hsl(71, 73%, 54%);
+	width:100%;
+	height: 3em;
+	margin: 8% auto;
+	border-style: none;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/*=========================
+    footer
+==========================*/
+
+footer{
+	color: #fff;
+	background: hsl(179, 62%, 48%);
+	padding: 8%;
+	text-align: left;
+	margin:-8% auto !important;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	height: auto;
+	width:100%;
+}
+footer h2{
+	margin: 8% auto;
+}
+footer{
+	margin: 8% auto;
+}
+
+
+/*=========================
+    @media query
+==========================*/
+
+@media(min-width:375px){
+  footer,main{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+	#flexsection{
+		display: flex;
+	}
+	main{
+		border-bottom-left-radius: 10px;
+	}
+	footer{
+		margin: 0 auto !important;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 0;
+	}
+	h1{
+		font-size: 18px;
+		margin: 5% auto;
+	}
+	h2{
+		font-size: 16px;
+		margin: 5% auto;
+	}
+	p{
+		font-size: 14px;
+		margin: 5% auto;
+	}
+}
